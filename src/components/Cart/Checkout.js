@@ -49,6 +49,12 @@ const Checkout = (props) => {
     }
 
     // Submit cart data
+    props.onConfirm({
+      name: enteredName,
+      street: enteredStreet,
+      postalCode: enteredPostalCode,
+      city: enteredCity,
+    });
   };
 
   // create variables to hold the classes for the input controls
